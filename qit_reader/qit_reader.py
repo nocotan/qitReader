@@ -9,6 +9,7 @@ import sys
 
 from login import Login
 from qit_statement import QitStatement
+import stripper
 
 
 class QitReader():
@@ -50,6 +51,10 @@ class QitReader():
                 statements.qit_ls(path)
             if statement == 'cd':
                 path = statements.qit_cd(path, statement_line)
+            if statement.isdigit():
+                itm = int(statement)
+                print(all_items[itm]['title'])
+                print(stripper.strip(all_items[itm]['rendered_body']))
 
 if __name__ == '__main__':
     qit_reader = QitReader()

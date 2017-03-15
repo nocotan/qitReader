@@ -1,13 +1,13 @@
-#qitReader
+# qitReader
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 =========================================
 
-##Description
+## Description
 Qiitaをコンソール上で見ることができます。  
 黒い画面から出たくない人向け......  
 UNIXコマンドを扱うように操作、閲覧することができます。  
-##Usage  
+## Usage  
 初回認証が必要
 ```
 $ python3 qit_reader.py
